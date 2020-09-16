@@ -1,0 +1,23 @@
+{
+  "id": "2071798",
+  "name": "ams",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4727307",
+      "name": "unlock",
+      "font_class": "unlock",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "7894232",
+      "name": "mobile",
+      "font_class": "mobile1",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    }
+  ]
+}
