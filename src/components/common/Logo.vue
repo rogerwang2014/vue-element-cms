@@ -6,11 +6,12 @@
 
 <script>
 export default {
+    props: ['logoColor'],
     data() {
         return {
             title: '好买投研系统',
             link: 'www.howbuy.com',
-            logo: require('../../assets/images/cms_logo.png')
+            logo: require(`../../assets/images/cms_logo${this.logoColor === 'white' ? '_white' : ''}.png`)
         }
     }
 }
