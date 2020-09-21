@@ -6,18 +6,30 @@
                 <Navigation />
             </div>
         </header>
-        <div class="mainContainer"></div>
+        <BreadCrumb />
+        <div class="contentContainer">
+            <div class="content" ref="tableContainer">
+                <NonStandardData />
+                <Pagination />
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 import Logo from '../../components/common/Logo'
 import Navigation from '../../components/Navigation'
+import BreadCrumb from '../../components/BreadCrumb'
+import NonStandardData from '../nonStandardedData'
+import Pagination from '../../components/Pagination'
 
 export default {
     components: {
         Logo,
-        Navigation
+        Navigation,
+        NonStandardData,
+        BreadCrumb,
+        Pagination
     },
     data () {
         return {

@@ -30,9 +30,7 @@ export default {
             default: () => []
         }
     },
-    mounted () {
-        console.log(this.menuList)
-    },
+    mounted () {},
     methods: {
         goPage (item) {
             console.log(item)
