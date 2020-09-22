@@ -3,14 +3,14 @@
         <template v-for="item in menuList">
             <el-menu-item
                 v-if="!item.children"
-                :key="item.id"
+                :key="item.id + ''"
                 :index="item.id + ''"
                 @click="goPage(item)"
             >
                 <i :class="item.icon"></i>
                 <span slot="title">{{item.title}}</span>
             </el-menu-item>
-            <el-submenu v-else :index="item.id + ''" :key="item.id">
+            <el-submenu v-else :index="item.id + ''" :key="item.id + ''">
                 <template slot="title">
                     <i :class="item.icon"></i>
                     <span slot="title">{{item.title}}</span>
@@ -33,7 +33,7 @@ export default {
     mounted () {},
     methods: {
         goPage (item) {
-            console.log(item)
+            this.$router.push('/' + item.link)
         }
     }
 }

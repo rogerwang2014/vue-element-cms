@@ -1,10 +1,10 @@
 <template>
     <div class="navigationBar">
         <el-menu
-            :default-active="defaultActiveMenu"
             class="menuBar"
             mode="horizontal"
             @select="handleSelect"
+            :default-active="defaultActiveMenu"
         >
             <menu-tree :menu-list="menuList" />
         </el-menu>
@@ -12,16 +12,15 @@
 </template>
 
 <script>
-import { generateMenuTree } from '../../utils/common'
+import { generateMenuTree, flatTree } from '../../utils/common'
 import MenuTree from './MenuTree'
 import { navigationMenuData } from '../../constant'
-console.log(generateMenuTree(navigationMenuData, 0))
-
 export default {
     data () {
         return {
             defaultActiveMenu: '',
-            menuList: generateMenuTree(navigationMenuData, 0)
+            menuList: generateMenuTree(navigationMenuData, 0),
+            flatMenuData: flatTree(generateMenuTree(navigationMenuData, 0))
         }
     },
     components: {
@@ -29,16 +28,25 @@ export default {
     },
     name: 'Home',
     mounted () {
-        const menuList = this.menuList
-        if (menuList[0].children && menuList[0].children.length > 0) {
-            this.defaultActiveMenu = menuList[0].children[0].id + ''
-        } else {
-            this.defaultActiveMenu = menuList[0].id + ''
+        this.findActiveMenu()
+    },
+    watch: {
+        // 路由变化的时候更新导航菜单的选中状态
+        $route (to) {
+            this.defaultActiveMenu = ''
+            this.findActiveMenu()
         }
     },
     methods: {
-        handleSelect(key, keyPath) {
+        handleSelect (key, keyPath) {
             console.log(key, keyPath)
+        },
+        findActiveMenu () { // 根据路由选中导航菜单
+            this.flatMenuData.forEach((item) => {
+                if ('/' + item.link === this.$router.currentRoute.path) {
+                    this.defaultActiveMenu = item.id + ''
+                }
+            })
         }
     }
 }

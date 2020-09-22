@@ -9,8 +9,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: '非标数据',
         icon: 'el-icon-s-order',
-        link: '#',
-        name: 'fbsj',
+        name: 'nonStandardData',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -18,8 +17,7 @@ export const navigationMenuData = [
         parentId: 1,
         title: '日净值、估值',
         icon: 'el-icon-s-marketing',
-        link: '#',
-        name: 'rjzgz',
+        name: 'dailyNetValue',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -27,8 +25,7 @@ export const navigationMenuData = [
         parentId: 1,
         title: '公司追踪',
         icon: 'el-icon-s-help',
-        link: '#',
-        name: 'gszz',
+        name: 'companyTrack',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -37,8 +34,7 @@ export const navigationMenuData = [
         parentId: 1,
         title: 'SOURCING分析',
         icon: 'el-icon-s-data',
-        link: '#',
-        name: 'SOURCINGfx',
+        name: 'sourcingAnalyse',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -46,8 +42,7 @@ export const navigationMenuData = [
         parentId: 1,
         title: '行业分布',
         icon: 'el-icon-s-grid',
-        link: '#',
-        name: 'hyfb',
+        name: 'industrialDistribution',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -55,8 +50,7 @@ export const navigationMenuData = [
         parentId: 1,
         title: '资产配置',
         icon: 'el-icon-s-cooperation',
-        link: '#',
-        name: 'zcpz',
+        name: 'assetManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -64,8 +58,7 @@ export const navigationMenuData = [
         parentId: 1,
         title: '存量产品提醒',
         icon: 'el-icon-s-opportunity',
-        link: '#',
-        name: 'clcptx',
+        name: 'storageRemind',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -73,8 +66,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: '基金研究',
         icon: 'el-icon-data-analysis',
-        link: '#',
-        name: 'jjyj',
+        name: 'fundAnalyse',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -83,8 +75,7 @@ export const navigationMenuData = [
         parentId: 8,
         title: '公募产品库',
         icon: 'el-icon-suitcase-1',
-        link: '#',
-        name: 'gmcpk',
+        name: 'gmLibrary',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -93,8 +84,7 @@ export const navigationMenuData = [
         parentId: 8,
         title: '私募基金池',
         icon: 'el-icon-suitcase',
-        link: '#',
-        name: 'smjjc',
+        name: 'smLibrary',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -103,8 +93,7 @@ export const navigationMenuData = [
         parentId: 10,
         title: '基金分级池1-机会追踪',
         icon: 'el-icon-position',
-        link: '#',
-        name: 'jjfjc1jhzz',
+        name: 'opportunityChase',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -112,8 +101,7 @@ export const navigationMenuData = [
         parentId: 10,
         title: '基金分级池2-尽调',
         icon: 'el-icon-chat-line-square',
-        link: '#',
-        name: 'jjfjc2jd',
+        name: 'dueDiligence',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -121,8 +109,7 @@ export const navigationMenuData = [
         parentId: 10,
         title: '基金分级池3-投/售',
         icon: 'el-icon-set-up',
-        link: '#',
-        name: 'jjfjc3ts',
+        name: 'buyAndSell',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -130,8 +117,7 @@ export const navigationMenuData = [
         parentId: 8,
         title: '机构',
         icon: 'el-icon-office-building',
-        link: '#',
-        name: 'jg',
+        name: 'institution',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -139,8 +125,7 @@ export const navigationMenuData = [
         parentId: 8,
         title: '基金经理',
         icon: 'el-icon-s-custom',
-        link: '#',
-        name: 'jjjl',
+        name: 'fundManager',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -148,8 +133,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: '尽调管理',
         icon: 'el-icon-notebook-2',
-        link: '#',
-        name: 'jdgl',
+        name: 'dueDiligenceManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -157,8 +141,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: '组合管理',
         icon: 'el-icon-pie-chart',
-        link: '#',
-        name: 'zhgl',
+        name: 'combinationManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -166,8 +149,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: '报告管理',
         icon: 'el-icon-document',
-        link: '#',
-        name: 'bggl',
+        name: 'reportManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -175,8 +157,7 @@ export const navigationMenuData = [
         parentId: 18,
         title: '走访报告',
         icon: 'el-icon-document-copy',
-        link: '#',
-        name: 'zfbg',
+        name: 'interviewReport',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     }, {
@@ -184,8 +165,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: 'FOF投管',
         icon: 'el-icon-files',
-        link: '#',
-        name: 'foftg',
+        name: 'fofManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -194,8 +174,7 @@ export const navigationMenuData = [
         parentId: 0,
         title: '系统管理',
         icon: 'el-icon-mouse',
-        link: '#',
-        name: 'xtgl',
+        name: 'systemManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -204,8 +183,7 @@ export const navigationMenuData = [
         parentId: 21,
         title: '菜单管理',
         icon: 'el-icon-menu',
-        link: 'menu/list',
-        name: 'menulist',
+        name: 'menuManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -214,8 +192,7 @@ export const navigationMenuData = [
         parentId: 21,
         title: '元素管理',
         icon: 'el-icon-news',
-        link: 'param/list',
-        name: 'paramlist',
+        name: 'elementManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -224,8 +201,7 @@ export const navigationMenuData = [
         parentId: 21,
         title: '用户与权限管理',
         icon: 'el-icon-turn-off',
-        link: 'user/list',
-        name: 'userlist',
+        name: 'userAndPermission',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -234,8 +210,7 @@ export const navigationMenuData = [
         parentId: 21,
         title: '组织管理',
         icon: 'el-icon-school',
-        link: 'organization/list',
-        name: 'organizationlist',
+        name: 'organizationManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
     },
@@ -244,9 +219,109 @@ export const navigationMenuData = [
         parentId: 21,
         title: '接口管理',
         icon: 'el-icon-coordinate',
-        link: 'interface/list',
-        name: 'interfacelist',
+        name: 'apiManagment',
         createdTime: '2020-08-17 15:50:51',
         createdUser: 'admin'
+    }
+]
+
+// 表格数据
+export const tableData = [
+    {
+        date: '2016-05-02',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1518 弄'
+    }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1517 弄'
+    }, {
+        date: '2016-05-01',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1519 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
+    }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        fundName: '工银货币',
+        fundCode: '481001',
+        benefit: '16.66%',
+        fundType: '股票型',
+        address: '上海市普陀区金沙江路 1516 弄'
     }
 ]

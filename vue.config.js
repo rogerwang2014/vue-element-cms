@@ -5,9 +5,9 @@ module.exports = {
     chainWebpack: (config) => {
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
         types.forEach((type) =>
-            addStyleResource(config.module.rule('less').oneOf(type)),
+            addStyleResource(config.module.rule('less').oneOf(type))
         )
-    },
+    }
 }
 
 // 配置全局less变量
@@ -18,8 +18,8 @@ function addStyleResource (rule) {
         .options({
             patterns: [
                 path.resolve(__dirname, './src/assets/css/variable.less'),
-                path.resolve(__dirname, './src/assets/css/mixins.less'),
-            ],
+                path.resolve(__dirname, './src/assets/css/mixins.less')
+            ]
         })
 }
 

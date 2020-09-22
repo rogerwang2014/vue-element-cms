@@ -8,6 +8,8 @@ export const generateMenuTree = (datas, parentId) => {
     datas.forEach(n => {
         var obj = { ...n }
         if (obj.parentId === parentId) {
+            const parentItem = datas.find((item) => item.id === parentId)
+            obj.link = (parentItem ? (parentItem.name + '/') : '') + n.name
             const children = generateMenuTree(datas, obj.id)
             if (children && children.length > 0) {
                 obj.children = children
@@ -16,4 +18,22 @@ export const generateMenuTree = (datas, parentId) => {
         }
     })
     return list
+}
+
+/**
+ * tree数据扁平化
+ * 添加深度
+ * 添加父级节点(不能添加，只能使用父节点ID，添加echart会爆栈)
+ */
+export const flatTree = (data, treeMap = [], depth = 0) => {
+    if (!(data && data.length)) return
+    depth++
+    return data.reduce((acc, cur) => {
+        cur.depth = depth
+        acc.push(cur)
+        if (cur.children && cur.children.length) {
+            flatTree(cur.children, treeMap, depth)
+        }
+        return acc
+    }, treeMap)
 }

@@ -1,0 +1,37 @@
+.pageContainer {
+    .widthHeight100();
+    padding-top: @header_bar_height + @bread_crumb_bar_height;
+    header {
+        width: 100%;
+        height: @header_bar_height;
+        background-color: #363a52;
+        box-shadow: 0 1px 8px 0 #e8e8e8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        > div {
+            max-width: @max_content_width;
+            margin: 0 auto;
+            padding: 0 5px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            height: 100%;
+        }
+    }
+    .contentContainer {
+        .widthHeight100();
+        max-width: @max_content_width;
+        min-width: @min_content_width;
+        margin: 0 auto;
+        padding: 10px 0;
+        .content {
+            .widthHeight100();
+            background-color: #fff;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+            padding: 10px;
+        }
+    }
+}
+
