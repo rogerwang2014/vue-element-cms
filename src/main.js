@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 import Fragment from 'vue-fragment'
 import ElementUI from 'element-ui'
 import './mock' // 全局 Mock 接口
@@ -29,5 +30,6 @@ Vue.use(Upload)
 new Vue({
     el: '#app',
     router,
+    store,
     render: (h) => h(App)
 })

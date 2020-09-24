@@ -9,6 +9,8 @@ import ErrorPage from '../containers/errorPage'
 
 Vue.use(Router)
 
+console.log(menuRouterData)
+
 // 避免重定向到当前路由报错
 // const originalPush = Router.prototype.push
 // Router.prototype.push = (location) => {
@@ -51,7 +53,8 @@ export const initialRouterData = [
             {
                 path: 'antd',
                 name: 'antd',
-                component: AntDesign
+                component: AntDesign,
+                meta: { title: 'antd' }
             }
         ]
     }, {

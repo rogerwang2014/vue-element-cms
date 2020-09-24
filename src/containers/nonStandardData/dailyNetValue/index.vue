@@ -17,7 +17,7 @@ export default {
     data () {
         return {}
     },
-    name: 'Home'
+    name: 'DailyNetValue'
 }
 </script>
 

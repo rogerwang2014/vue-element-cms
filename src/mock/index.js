@@ -10,8 +10,8 @@ Mock.setup({
 })
 
 // 登录相关接口
-Mock.mock('/login/login', 'post', loginAPI.login)
-Mock.mock('/login/logout', 'post', loginAPI.logout)
+Mock.mock('/user/login', 'post', loginAPI.login)
+Mock.mock('/user/logout', 'post', loginAPI.logout)
 
 // 用户信息相关接口
 Mock.mock('/user/getInfo', 'post', userAPI.pullUserInfo)

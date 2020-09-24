@@ -26,7 +26,7 @@ export default {
     components: {
         MenuTree
     },
-    name: 'Home',
+    name: 'Navigation',
     mounted () {
         this.findActiveMenu()
     },

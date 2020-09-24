@@ -1,13 +1,25 @@
-import axios from 'axios'
+import request from '../utils/request'
 
-export function getHomeTotal() {
-    return axios.post('/homepage/hometotal')
+export function getHomeTotal(data) {
+    return request({
+        url: '/homepage/hometotal',
+        method: 'post',
+        data
+    })
 }
 
-export function getHomeDetailItem() {
-    return axios.post('/homepage/detailItem')
+export function getHomeDetailItem(data) {
+    return request({
+        url: '/homepage/detailItem',
+        method: 'post',
+        data
+    })
 }
 
-export function getRank() {
-    return axios.post('/homepage/investmentRank')
+export function getRank(data) {
+    return request({
+        url: '/homepage/investmentRank',
+        method: 'post',
+        data
+    })
 }

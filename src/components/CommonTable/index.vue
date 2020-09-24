@@ -69,6 +69,7 @@ export default {
     },
     mounted () {
         this.setTableHeight()
+        window.onresize = this.setTableHeight
     },
     methods: {
         handleEdit(index, row) {
@@ -79,14 +80,14 @@ export default {
         },
         // 重置table高度
         resetHeight() {
-            return new Promise((resolve, reject) => {
-                this.tableH = 0
+            return new Promise((resolve) => {
+                this.tableHeight = 0
                 resolve()
             })
         },
         // 设置table高度
         setTableHeight() {
-            this.resetHeight().then(res => {
+            this.resetHeight().then(() => {
                 this.tableHeight = this.$refs.tableContainer.offsetHeight
             })
         }

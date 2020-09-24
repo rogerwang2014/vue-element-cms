@@ -2,6 +2,9 @@
 const path = require('path')
 
 module.exports = {
+    devServer: {
+        port: '9001'
+    },
     chainWebpack: (config) => {
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
         types.forEach((type) =>
@@ -21,8 +24,4 @@ function addStyleResource (rule) {
                 path.resolve(__dirname, './src/assets/css/mixins.less')
             ]
         })
-}
-
-function resolve(dir) {
-    return path.join(__dirname, dir)
 }

@@ -9,8 +9,10 @@ export const menuRouterData = (() => {
         data.forEach((item) => {
             item.hidden = true
             item.path = '/' + item.link
+            item.meta = { title: item.title }
             if (item.children) {
                 item.component = Layout
+                item.redirect = '/' + item.children[0].link
                 getRouterByMenu(item.children)
             } else {
                 item.component = () => import('../containers/' + item.link)

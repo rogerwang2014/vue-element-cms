@@ -160,7 +160,6 @@
                 </div>
             </el-col>
         </el-row>
-
     </div>
 </template>
 <script>
@@ -219,6 +218,10 @@ export default {
         }
     },
     created() {
+        this.$store.getters.name && this.$message({
+            message: 'Welcome! ' + this.$store.getters.name,
+            type: 'success'
+        })
         // 获取头部hometotal
         getHomeTotal().then((resp) => {
             this.homeTotalData = resp.data

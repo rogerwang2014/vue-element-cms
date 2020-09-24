@@ -5,12 +5,14 @@
                 v-if="!item.children"
                 :key="item.id + ''"
                 :index="item.id + ''"
+                :base-path="item.path"
+                :route="item"
                 @click="goPage(item)"
             >
                 <i :class="item.icon"></i>
                 <span slot="title">{{item.title}}</span>
             </el-menu-item>
-            <el-submenu v-else :index="item.id + ''" :key="item.id + ''">
+            <el-submenu v-else :index="item.id + ''" :key="item.id + ''" :route="item">
                 <template slot="title">
                     <i :class="item.icon"></i>
                     <span slot="title">{{item.title}}</span>

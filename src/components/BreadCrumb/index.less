@@ -1,7 +1,7 @@
 .breadCrumbContainer {
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
     background-color: #fff;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -11,7 +11,13 @@
     > div {
         max-width: @max_content_width;
         margin: 0 auto;
-        padding: 2px 15px 2px 5px;
+        padding: 2px 15px 2px 1px;
         color: #c33;
+        .app-breadcrumb.el-breadcrumb {
+            .no-redirect {
+                color: #97a8be;
+                cursor: text;
+            }
+        }
     }
 }

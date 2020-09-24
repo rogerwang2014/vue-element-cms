@@ -31,10 +31,8 @@ export default {
     watch: {
         showSearchBar(value) {
             if (value) {
-                console.log('addEventListener')
                 document.body.addEventListener('click', this.handleCloseSearchBar)
             } else {
-                console.log('removeEventListener')
                 document.body.removeEventListener('click', this.handleCloseSearchBar)
             }
         }
