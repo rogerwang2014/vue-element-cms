@@ -1,5 +1,5 @@
 <template>
-    <div class="content" ref="tableContainer">
+    <div class="commonContent" ref="tableContainer">
         <common-table />
         <Pagination />
     </div>

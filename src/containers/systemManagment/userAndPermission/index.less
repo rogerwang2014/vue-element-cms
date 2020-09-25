@@ -1,0 +1,66 @@
+.setPermissionPage {
+    display: flex;
+    .roleGroup {
+        height: 100%;
+        .title {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e4e7ed;
+        }
+        .el-tabs {
+            height: 100%;
+            .el-tabs__header {
+                margin-right: 0;
+                .el-tabs__nav {
+                    .el-tabs__item {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .permissionWrap {
+        flex: 1;
+        padding: 0 10px;
+        .groupMembers {
+            .titleBar {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                color: #333;
+                font-weight: bold;
+                .expand {
+                    float: right;
+                }
+            }
+            .memberWrap {
+                max-height: 90px;
+                overflow: hidden;
+                background-color: #f4f6f9;
+                position: relative;
+                padding: 10px 10px 10px 18px;
+                border-style: solid;
+                border-color: #f4f6f9;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 5px;
+                    li {
+                        padding: 4px 0;
+                        width: 80px;
+                        text-align: center;
+                        border-radius: 40px;
+                        background-color: #fff;
+                        margin: 0 15px 10px 0;
+                        .border(#ccc);
+                        &:after {
+                            border-radius: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -325,3 +325,137 @@ export const tableData = [
         address: '上海市普陀区金沙江路 1516 弄'
     }
 ]
+
+export const roleData = [
+    {
+        roleId: '001',
+        roleName: '超级管理员'
+    }, {
+        roleId: '002',
+        roleName: '管理员'
+    }, {
+        roleId: '003',
+        roleName: '用户组1'
+    }, {
+        roleId: '004',
+        roleName: '用户组2'
+    }, {
+        roleId: '005',
+        roleName: '用户组3'
+    }
+]
+
+export const groupUsers = [
+    {
+        userName: '用户1',
+        userId: '0001'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }, {
+        userName: '用户2',
+        userId: '0002'
+    }, {
+        userName: '用户3',
+        userId: '0003'
+    }, {
+        userName: '用户4',
+        userId: '0004'
+    }, {
+        userName: '用户5',
+        userId: '0005'
+    }
+]

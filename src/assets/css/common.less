@@ -1,5 +1,6 @@
 html, body {
     .widthHeight100();
+    color: @black1;
     background-color: @bg_main;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -10,5 +11,15 @@ html, body {
     font-feature-settings: "tnum";
     #app {
         .widthHeight100();
+    }
+}
+
+// better-scroll滚动条的样式
+.bscroll-vertical-scrollbar {
+    .bscroll-indicator {
+        background: rgba(0, 0, 0, 0.2) !important;
+        width: 6px !important;
+        border-radius: 3px !important;
+        right: 2px !important;
     }
 }

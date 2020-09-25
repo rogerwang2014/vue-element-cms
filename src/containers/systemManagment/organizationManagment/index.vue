@@ -17,7 +17,7 @@ export default {
     data () {
         return {}
     },
-    name: 'StorageRemind'
+    name: 'OrganizationManagment'
 }
 </script>
 
