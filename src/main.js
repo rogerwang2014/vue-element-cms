@@ -12,9 +12,13 @@ import './assets/css/reset.less'
 // antd相关组件
 import { Button, Icon, Menu, DatePicker, Message, ConfigProvider, Popconfirm, Upload } from 'ant-design-vue'
 
+import GlobalMethods from './utils/globalMethods'
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(Fragment.Plugin)
+Vue.prototype.$$ = GlobalMethods
+window.$$ = GlobalMethods
 
 // antd组件
 Vue.use(Button)

@@ -27,6 +27,7 @@
                                                 v-model="loginForm.username"
                                                 placeholder="请输入帐号"
                                                 size="medium"
+                                                @input="handleInput"
                                             >
                                                 <span slot="prefix" class="iconfont icon_mobile"></span>
                                             </el-input>
@@ -75,6 +76,7 @@
                 </div>
             </div>
         </div>
+        <input id="testInput" />
     </div>
 </template>
 
@@ -127,6 +129,9 @@ export default {
         }
     },
     mounted() {
+        document.getElementById('testInput').addEventListener('input', this.$$.debounce((e) => {
+            console.log(e.target.value)
+        }, 1000))
         if (this.loginForm.username === '') {
             this.$refs.username.focus()
         } else if (this.loginForm.password === '') {
@@ -166,6 +171,13 @@ export default {
                 }
                 return acc
             }, {})
+        },
+        handleInput (val) {
+            const context = this
+            this.$$.debounce(() => context.verifyUserName(val), 500)
+        },
+        verifyUserName (val) {
+            console.log(val)
         }
     }
 }
