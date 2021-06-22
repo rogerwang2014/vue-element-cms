@@ -49,6 +49,30 @@ class GlobalMethods {
             }
         }
     }
+
+    /**
+     * 快排
+     */
+    static quickSort (originalArr) {
+        if (!originalArr || originalArr.length <= 1) {
+            return originalArr
+        }
+        const arr = [...originalArr]
+        const midIndex = Math.floor(arr.length / 2)
+        const midNum = arr.splice(midIndex, 1)[0]
+        const leftArr = []
+        const rightArr = []
+
+        arr.forEach(item => {
+            if (item <= midNum) {
+                leftArr.push(item)
+            } else {
+                rightArr.push(item)
+            }
+        })
+
+        return [...quickSort(leftArr), midNum, ...quickSort(rightArr)]
+    }
 }
 
 export default GlobalMethods
