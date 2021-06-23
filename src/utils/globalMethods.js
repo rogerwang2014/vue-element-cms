@@ -2,7 +2,28 @@
  * 全局公用方法
  */
 
+/** 作用于类的装饰器 */
+function log (target) {
+    target.log = (msg) => {
+        console.log(msg)
+    }
+    return target
+}
+
+/** 作用于属性的装饰器 */
+function readonly (target, name, descriptor) {
+    descriptor.writable = false
+    return descriptor
+}
+
+@log
 class GlobalMethods {
+    /** 在此处调用类属性装饰器，作用于sayHello方法 */
+    @readonly
+    sayHello () {
+        console.log('hello ivbd!')
+    }
+
     /**
      * 防抖
      * @param fn: {Function} 待执行函数
@@ -71,7 +92,7 @@ class GlobalMethods {
             }
         })
 
-        return [...quickSort(leftArr), midNum, ...quickSort(rightArr)]
+        return [...GlobalMethods.quickSort(leftArr), midNum, ...GlobalMethods.quickSort(rightArr)]
     }
 }
 
