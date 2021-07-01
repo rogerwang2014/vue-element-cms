@@ -97,3 +97,79 @@ class GlobalMethods {
 }
 
 export default GlobalMethods
+
+/**
+ * 把嵌套数组转成平铺数组
+ * @param data <Array>
+ * @param childName <String> 子集节点的名称
+ * @return newData <Array>
+ */
+const flatTree = (data, childName = 'children') => {
+    if (!Array.isArray(data)) {
+        console.warn('只支持传入数组')
+        return []
+    }
+    return data.reduce((prev, curt) => {
+        // 有子节点的话把子节点作为一级节点递归遍历
+        const childs = curt[childName]?.length ? flatTree(curt[childName]) : []
+        return [...prev, curt, ...childs]
+    }, [])
+}
+
+const generateArr = [
+    {
+        id: '001',
+        name: '节点1',
+        children: [
+            {
+                id: '0011',
+                name: '节点1-1',
+                children: [
+                    {
+                        id: '00111',
+                        name: '节点1-1-1'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: '002',
+        name: '节点2'
+    }
+]
+console.log(flatTree(generateArr))
+
+/**
+ * 把平铺结构转成树结构
+ * @param data <Array>
+ * @param parentId <String> 父级id，遍历最外层的时候不用传递
+ * @param <Object> { idName: 主键名称，默认id, parentIdName: 父级主键名称，默认parentId, childName: 子集名称，默认children }
+ * @return newData <Array>
+ */
+const generateTree = (data, parentId, { idName = 'id', parentIdName = 'parentId', childName = 'children' } = {}) => {
+    if (!Array.isArray(data)) {
+        console.warn('只支持传入数组')
+        return data
+    }
+
+    return data.reduce((prev, curt) => {
+        // 子类上绑定的parentId等于父集id的时候，通过递归遍历把子集添加到父集对象上
+        if (curt[parentIdName] === parentId) {
+            const children = generateTree(data, curt[idName])
+            if (children?.length) {
+                curt[childName] = children
+            }
+            return [...prev, curt]
+        }
+        return prev
+    }, [])
+}
+
+const flatArr = [
+    { id: '001', name: '节点1' },
+    { id: '0011', parentId: '001', name: '节点1-1' },
+    { id: '00111', parentId: '0011', name: '节点1-1-1' },
+    { id: '002', name: '节点2' }
+]
+console.log(generateTree(flatArr))
